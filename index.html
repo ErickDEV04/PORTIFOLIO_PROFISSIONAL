@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Desenvolvedor Front-end</title>
+    <!-- Bootstrap 5 CSS (apenas para a navbar) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fontes Criativas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (ícones de redes sociais) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS (Animações ao rolar) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-mono">
+    <!-- Navbar com Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray-800 fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-2xl font-bold" href="#">Portfólio Profissional</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fundo animado com pontos luminosos -->
+    <div class="particles"></div>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-gray-800 relative">
+        <div class="container text-center" data-aos="fade-up">
+            <!-- Foto arredondada -->
+            <img src="PhotoCollageMaker_20230708_122428088.JPG" alt="Minha Foto" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-green-500">
+            <h1 class="text-5xl font-bold mb-4">Olá, Meu nome é Erick Silva, sou um Desenvolvedor Front-end</h1>
+            <p class="text-xl mb-8">Especializado em HTML, CSS, JavaScript, Bootstrap 5, Tailwind CSS. e React.js</p>
+            <a href="#skills" class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg text-lg transition duration-300">Ver Habilidades</a>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+<section id="skills" class="py-20 bg-gray-700 relative">
+    <div class="container">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Habilidades</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Habilidades com animações -->
+            <div class="skill-card p-6 bg-gray-600 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" class="w-20 h-20 mx-auto mb-4"> <!-- Logo do HTML -->
+                <h3 class="text-2xl font-bold text-center">HTML5</h3>
+            </div>
+            <div class="skill-card p-6 bg-gray-600 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" class="w-20 h-20 mx-auto mb-4"> <!-- Logo do CSS -->
+                <h3 class="text-2xl font-bold text-center">CSS3</h3>
+            </div>
+            <div class="skill-card p-6 bg-gray-600 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript" class="w-20 h-20 mx-auto mb-4"> <!-- Logo do JavaScript -->
+                <h3 class="text-2xl font-bold text-center">JavaScript</h3>
+            </div>
+            <div class="skill-card p-6 bg-gray-600 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="Bootstrap 5" class="w-20 h-20 mx-auto mb-4"> <!-- Logo do Bootstrap 5 -->
+                <h3 class="text-2xl font-bold text-center">Bootstrap 5</h3>
+            </div>
+            <div class="skill-card p-6 bg-gray-600 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                <img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" alt="Tailwind CSS" class="w-20 h-20 mx-auto mb-4"> <!-- Logo do Tailwind CSS -->
+                <h3 class="text-2xl font-bold text-center">Tailwind CSS</h3>
+            </div>
+            <div class="skill-card p-6 bg-gray-600 rounded-lg shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React.js" class="w-20 h-20 mx-auto mb-4"> <!-- Logo do React.js -->
+                <h3 class="text-2xl font-bold text-center">React.js</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="py-20 bg-gray-800 relative">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Contato</h2>
+            <form action="https://formspree.io/f/seu-id" method="POST" class="max-w-lg mx-auto" data-aos="fade-up">
+                <div class="mb-4">
+                    <input type="text" name="name" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Seu Nome" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" name="_replyto" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Seu Email" required>
+                </div>
+                <div class="mb-4">
+                    <textarea name="message" class="w-full p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-600" rows="5" placeholder="Sua Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg text-lg transition duration-300">Enviar Mensagem</button>
+            </form>
+            <!-- Ícones de redes sociais -->
+            <div class="flex justify-center space-x-6 mt-8" data-aos="fade-up">
+                <a href="https://github.com/ErickDEV04" target="_blank" class="text-gray-400 hover:text-green-500">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="text-gray-400 hover:text-green-500">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/zzerick04?igsh=emtoMHgweHRseGxr&utm_source=qr" target="_blank" class="text-gray-400 hover:text-green-500">
+                    <i class="fab fa-instagram text-3xl"></i> <!-- Ícone do Instagram -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-900 text-center relative">
+        <p class="text-gray-400">&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Script Personalizado -->
+    <script src="script.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init();
+    </script>
+</body>
+</html>
