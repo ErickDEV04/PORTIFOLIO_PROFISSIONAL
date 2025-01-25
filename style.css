@@ -41,6 +41,35 @@ body {
     }
 }
 
+/* Efeito de Parallax */
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Efeito de Typing */
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #00ff00; /* Cursor piscando */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff00; }
+}
+
 /* Estilos personalizados */
 body {
     font-family: 'Montserrat', sans-serif;
